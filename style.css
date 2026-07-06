@@ -378,7 +378,7 @@ section { padding: 96px 0; }
 }
 .about-photo-bg {
   position: absolute; inset: 0; z-index: 0;
-  background-image: url('images/現場イラスト.jpg');
+  background-image: url('images/GenbaIllust.jpg');
   background-size: 110% auto;
   background-position: 2% center;
 }
@@ -696,15 +696,6 @@ section { padding: 96px 0; }
   background: var(--blue); color: #fff; border-color: var(--blue);
 }
 .pricing-name { font-size: 1.15rem; font-weight: 900; color: var(--text); }
-.pricing-head {
-  background: none; border: none; padding: 0; margin: 0;
-  font: inherit; color: inherit; text-align: left;
-  display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
-  width: 100%; cursor: default;
-}
-.pricing-head-text { display: flex; flex-direction: column; gap: 14px; }
-.pricing-body { display: flex; flex-direction: column; gap: 14px; flex: 1; }
-.pricing-chevron { display: none; }
 .pricing-desc { font-size: 0.85rem; line-height: 1.75; color: var(--sub); flex: 1; }
 .pricing-price-wrap { display: flex; align-items: baseline; gap: 6px; margin-top: auto; }
 .pricing-price {
@@ -945,24 +936,9 @@ section { padding: 96px 0; }
   .process-outputs { flex-direction: row; flex-wrap: wrap; max-width: none; }
   .process-out { flex: 1; min-width: 140px; }
 
-  /* Pricing: accordion */
+  /* Pricing */
   .pricing-grid { grid-template-columns: 1fr; gap: 16px; }
   .pricing-monthly-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .pricing-card { gap: 0; }
-  .pricing-head { cursor: pointer; }
-  .pricing-chevron {
-    display: block; flex-shrink: 0; margin-top: 4px;
-    font-size: 1rem; color: var(--blue);
-    transition: transform 0.25s ease;
-  }
-  .pricing-card.is-open .pricing-chevron { transform: rotate(180deg); }
-  .pricing-body {
-    max-height: 0; opacity: 0; overflow: hidden;
-    transition: max-height 0.32s ease, opacity 0.25s ease;
-  }
-  .pricing-card.is-open .pricing-body {
-    max-height: 400px; opacity: 1; margin-top: 14px;
-  }
 
   /* Final CTA */
   .final-cta-actions { flex-direction: column; align-items: center; }

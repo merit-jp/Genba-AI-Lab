@@ -76,27 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-  /* =====================
-    料金プラン 開閉（アコーディオン、SPのみ見た目に反映）
-  ===================== */
-  var pricingCards = document.querySelectorAll('.pricing-card');
-  pricingCards.forEach(function (card) {
-    var head = card.querySelector('.pricing-head');
-    if (!head) return;
-    head.addEventListener('click', function () {
-      var isOpen = card.classList.contains('is-open');
-      pricingCards.forEach(function (c) {
-        c.classList.remove('is-open');
-        var b = c.querySelector('.pricing-head');
-        if (b) b.setAttribute('aria-expanded', 'false');
-      });
-      if (!isOpen) {
-        card.classList.add('is-open');
-        head.setAttribute('aria-expanded', 'true');
-      }
-    });
-  });
-
 
   /* =====================
     スクロールフェードイン（IntersectionObserver）
