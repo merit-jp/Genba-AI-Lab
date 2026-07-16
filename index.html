@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
     </a>
     <div class="hd-cta-group">
       <a href="https://calendar.app.google/vdWcHCvukqvAnP9Q6" target="_blank" rel="noopener" class="btn btn-grad-outline hd-cta-sub">オンライン相談予約</a>
-      <a href="tel:0748558027" class="btn btn-grad hd-cta"><img src="images/phonIcon.svg" class="tel-icon" alt=""> 電話で相談</a>
+      <a href="tel:0748558017" class="btn btn-grad hd-cta"><img src="images/phonIcon.svg" class="tel-icon" alt=""> 電話で相談</a>
     </div>
     <button id="hamburger" class="hamburger" aria-label="メニューを開く" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -48,34 +48,42 @@
   </nav>
   <div class="mnav-cta-group">
     <a href="https://calendar.app.google/vdWcHCvukqvAnP9Q6" target="_blank" rel="noopener" class="btn btn-grad-outline mnav-cta-btn mnav-link">オンライン相談予約</a>
-    <a href="tel:0748558027" class="btn btn-grad mnav-cta-btn mnav-link"><img src="images/phonIcon.svg" class="tel-icon" alt=""> 今すぐ電話する</a>
+    <a href="tel:0748558017" class="btn btn-grad mnav-cta-btn mnav-link"><img src="images/phonIcon.svg" class="tel-icon" alt=""> 今すぐ電話する</a>
   </div>
 </div>
 
 
-<!-- ===== 1. HERO ===== -->
+<!-- ===== 1. HERO (ファーストビュー) ===== -->
 <section class="hero" id="hero">
-  <!-- ★ ここに Midjourney 生成写真を差し込む（現場リアル写真、横長） -->
-  <div class="hero-bg">
-    <div class="hero-photo-ph" aria-hidden="true">
-      <span>★ Midjourney 生成写真<br>現場リアル写真をここに配置</span>
-    </div>
-    <div class="hero-overlay"></div>
-  </div>
   <div class="container hero-inner">
     <div class="hero-copy" data-fade>
-      <h1 class="hero-title">
-        写真と説明を入れるだけ。<br>
-        AIがマニュアルを<br>自動でつくる。
-      </h1>
-      <p class="hero-badge">むずかしいAIの知識は、いりません。</p>
-      <p class="hero-sub">
-        専用Excelに入力するだけで、AIがスマホ用マニュアルと印刷用PDFを自動作成。<br>
-        日本語だけで多言語対応もできるので、外国人スタッフにもそのまま伝わります。
-      </p>
+      <h1 class="hero-title">中小企業のAI導入最適解！</h1>
+      <p class="hero-sub">AIマニュアル作成をきっかけに、自社でAIを使いこなす企業へ。</p>
       <div class="hero-actions">
-        <a href="tel:0748558027" class="btn btn-yellow btn-lg">電話で相談する</a>
-        <a href="https://calendar.app.google/vdWcHCvukqvAnP9Q6" target="_blank" rel="noopener" class="btn btn-outline-white btn-lg">オンライン相談予約</a>
+        <a href="tel:0748558017" class="btn btn-grad-outline btn-lg">電話で相談する</a>
+        <a href="https://calendar.app.google/vdWcHCvukqvAnP9Q6" target="_blank" rel="noopener" class="btn btn-yellow btn-lg">30分無料オンライン相談を予約</a>
+      </div>
+    </div>
+    <div class="hero-illust" data-fade>
+      <!-- ★ 仮イラスト：外国人スタッフが正面向きでタブレットを持つ構図（本番イラスト差し替え予定） -->
+      <div class="hero-illust-frame">
+        <div class="hero-person-ph" aria-hidden="true">
+          <div class="hero-person-head"></div>
+          <div class="hero-person-body"></div>
+        </div>
+        <div class="hero-tablet">
+          <div class="hero-tablet-body">
+            <div class="hero-tablet-screen">
+              <iframe
+                src="demo-manual.html"
+                class="hero-tablet-iframe"
+                title="マニュアルサンプルプレビュー"
+                tabindex="-1"
+                aria-hidden="true"
+                scrolling="no"></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -228,7 +236,7 @@
     <p class="section-eyebrow text-center" data-fade>使うツール・提供サービス</p>
     <h2 class="section-title text-center" data-fade>３ステップでかんたんマニュアル作成！</h2>
     <p class="section-lead text-center" data-fade>
-      難しい操作は一切なし。専用テンプレートに書いてコピペするだけで、プロ品質のマニュアルが自動で完成します。
+      専用アプリ「現場AIラボ」にログインするだけ。スプレッドシートもインストールも不要で、プロ品質のマニュアルが自動で完成します。
     </p>
 
     <div class="process-steps-3" data-fade>
@@ -237,10 +245,10 @@
       <div class="ps3-step">
         <div class="ps3-num">STEP 1</div>
         <div class="ps3-icon">
-          <img src="images/google-sheets.jpg" alt="Google スプレッドシート">
+          <span>📷</span>
         </div>
-        <h3 class="ps3-title">スプシに入力</h3>
-        <p class="ps3-desc">工程写真・作業手順・注意点を専用テンプレートに記入するだけ</p>
+        <h3 class="ps3-title">写真と説明を入力</h3>
+        <p class="ps3-desc">スマホ・PCから現場AIラボにログインし、工程写真と一言メモを入力するだけ</p>
       </div>
 
       <div class="ps3-arrow" aria-hidden="true">▶</div>
@@ -249,10 +257,10 @@
       <div class="ps3-step">
         <div class="ps3-num">STEP 2</div>
         <div class="ps3-icon">
-          <img src="images/claude-ai.jpg" alt="Claude AI">
+          <span>✅</span>
         </div>
-        <h3 class="ps3-title">AIに渡す</h3>
-        <p class="ps3-desc">設定済みのClaudeプロジェクトに<span class="hl">コピペするだけ。</span>専門知識不要</p>
+        <h3 class="ps3-title">「保存」を押すだけ</h3>
+        <p class="ps3-desc"><span class="hl">AIが自動で多言語に翻訳。</span>専門知識も追加作業も不要</p>
       </div>
 
       <div class="ps3-arrow" aria-hidden="true">▶</div>
@@ -263,7 +271,7 @@
         <div class="ps3-icon ps3-icon--out">
           <span>📋</span>
         </div>
-        <h3 class="ps3-title">マニュアル生成</h3>
+        <h3 class="ps3-title">マニュアル完成</h3>
         <p class="ps3-desc">WebマニュアルとPDFが自動作成。多言語対応も一発で</p>
         <div class="ps3-badges">
           <span class="process-badge">Webマニュアル</span>
@@ -275,8 +283,8 @@
     </div>
 
     <div class="process-note" data-fade>
-      <span><img src="images/google-drive.jpg" alt="Google Drive" style="width:28px;height:28px;object-fit:contain;border-radius:4px;vertical-align:middle;"></span>
-      <p><strong>Googleドライブで一元管理。</strong><br>変更があってもスプシを修正してAIに投げるだけ。マニュアルの更新・差し替えがすぐにできます。</p>
+      <span>🔗</span>
+      <p><strong>共有リンクひとつで、現場のスマホからすぐ閲覧。</strong><br>内容を直したら、もう一度「保存」を押すだけで最新版に更新されます。</p>
     </div>
 
   </div>
@@ -292,7 +300,7 @@
     </div>
     <div class="mid-cta-btns" data-fade>
       <a href="https://calendar.app.google/vdWcHCvukqvAnP9Q6" target="_blank" rel="noopener" class="btn btn-yellow btn-lg">オンライン相談予約</a>
-      <a href="tel:0748558027" class="btn btn-outline-white btn-lg"><img src="images/phonIcon.svg" class="tel-icon" alt=""> 今すぐ電話する</a>
+      <a href="tel:0748558017" class="btn btn-outline-white btn-lg"><img src="images/phonIcon.svg" class="tel-icon" alt=""> 今すぐ電話する</a>
     </div>
   </div>
 </section>
@@ -303,34 +311,34 @@
   <div class="container">
     <p class="section-eyebrow text-center" data-fade>料金</p>
     <h2 class="section-title text-center" data-fade>料金プラン</h2>
-    <p class="section-lead text-center" data-fade>まずは1つのマニュアルから。無理なく始められます。</p>
+    <p class="section-lead text-center" data-fade>すべて買い切り。月額に縛られず、一度のお支払いでずっと使えます。</p>
 
     <div class="pricing-grid">
       <div class="pricing-card" data-fade data-fade-delay="0">
         <span class="pricing-tag">スタンダード</span>
-        <h3 class="pricing-name">自走プラン</h3>
-        <p class="pricing-desc">構築＋テンプレート渡し。最低限のレクチャーのみ、以降は自社で運用します。</p>
+        <h3 class="pricing-name">アプリ利用プラン</h3>
+        <p class="pricing-desc">現場AIラボの永久利用ライセンス。マニュアル作成・多言語翻訳・共有、すべて使い放題です。</p>
         <div class="pricing-price-wrap">
-          <div class="pricing-price"><span class="pricing-yen">¥</span>150,000</div>
-          <span class="pricing-tax">税抜</span>
+          <div class="pricing-price"><span class="pricing-yen">¥</span>148,000</div>
+          <span class="pricing-tax">税抜・買い切り</span>
         </div>
       </div>
       <div class="pricing-card pricing-card--featured" data-fade data-fade-delay="1">
         <span class="pricing-tag pricing-tag--blue">おすすめ</span>
-        <h3 class="pricing-name">サポートプラン</h3>
-        <p class="pricing-desc">構築＋使い方サポート付き。疑問点をつぶしながら定着させます。</p>
+        <h3 class="pricing-name">プロプラン</h3>
+        <p class="pricing-desc">スタンダードに加え、Claude活用レクチャー（3ヶ月集中パッケージ）付き。社内でAIを使いこなせるようになります。</p>
         <div class="pricing-price-wrap">
-          <div class="pricing-price"><span class="pricing-yen">¥</span>350,000</div>
-          <span class="pricing-tax">税抜</span>
+          <div class="pricing-price"><span class="pricing-yen">¥</span>298,000</div>
+          <span class="pricing-tax">税抜・買い切り</span>
         </div>
       </div>
       <div class="pricing-card" data-fade data-fade-delay="2">
         <span class="pricing-tag">プレミアム</span>
         <h3 class="pricing-name">伴走開発プラン</h3>
-        <p class="pricing-desc">サポートプラン＋現場ヒアリング＋専用ツール開発。御社仕様で構築します。</p>
+        <p class="pricing-desc">プロプランに加え、御社の業務に合わせた簡易AIアプリの開発まで伴走します。</p>
         <div class="pricing-price-wrap">
-          <div class="pricing-price pricing-price--sm"><span class="pricing-yen">¥</span>1,200,000〜</div>
-          <span class="pricing-tax">規模により応相談</span>
+          <div class="pricing-price pricing-price--sm"><span class="pricing-yen">¥</span>980,000〜</div>
+          <span class="pricing-tax">税抜・規模により応相談</span>
         </div>
       </div>
     </div>
@@ -338,8 +346,8 @@
     <div class="pricing-monthly" data-fade>
       <div class="pricing-monthly-inner">
         <div>
-          <h3 class="pricing-monthly-name">月次相談プラン</h3>
-          <p class="pricing-monthly-desc">月1回の訪問で、相談・疑問点をつぶします。最低契約期間なし、いつでも解約可能。</p>
+          <h3 class="pricing-monthly-name">継続サポートプラン</h3>
+          <p class="pricing-monthly-desc">月1回の訪問・オンライン相談で、運用の疑問点や困りごとをつぶします。最低契約期間なし、いつでも解約可能。</p>
         </div>
         <div class="pricing-monthly-price">
           <span class="pricing-yen">¥</span>15,000<span class="pricing-per">／月</span>
@@ -347,7 +355,7 @@
       </div>
     </div>
 
-    <p class="pricing-note" data-fade>※すべて税抜き表示。詳細は無料相談にてご確認ください。</p>
+    <p class="pricing-note" data-fade>※すべて税抜き表示・買い切り（永久ライセンス）価格です。翌年以降、クラウドサーバー運用費として年額9,800円（税抜）が別途必要です（初年度は上記価格に含む）。詳細は無料相談にてご確認ください。</p>
 
   </div>
 </section>
@@ -363,20 +371,20 @@
       <div class="faq-group" data-fade>
         <h3 class="faq-group-title">契約・関係性</h3>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">月次相談プランはいつでも解約できますか？</button>
-          <div class="faq-a" hidden><p>はい。最低契約期間は設けていません。合わなければいつでも解約いただけます。</p></div>
+          <button class="faq-q" aria-expanded="false">月額費用はかかりますか？</button>
+          <div class="faq-a" hidden><p>ソフトウェア本体は買い切りなので、月額費用はかかりません。翌年以降、クラウドサーバー運用費として年額9,800円（税抜）のみ必要です。こちらは初年度は無料で、いつでも停止いただけます（停止するとクラウド上でのご利用ができなくなります）。</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">途中でプランを変更できますか？</button>
-          <div class="faq-a" hidden><p>可能です。プラン1からプラン2へのアップグレードなど、状況に合わせて変更できます。</p></div>
+          <div class="faq-a" hidden><p>可能です。スタンダードからプロプランへのアップグレードなど、状況に合わせて変更できます。</p></div>
         </div>
       </div>
 
       <div class="faq-group" data-fade>
         <h3 class="faq-group-title">継続性・属人化リスク</h3>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">買い切り後のサポートはどうなりますか？</button>
-          <div class="faq-a" hidden><p>基本操作は納品時にお伝えしますが、運用が変わった際やトラブル時は月次相談プランでフォローできます。</p></div>
+          <button class="faq-q" aria-expanded="false">使い方がわからなくなったらどうなりますか？</button>
+          <div class="faq-a" hidden><p>基本操作はご契約時にお伝えします。運用が変わった際やトラブル時は、プロプラン以上でついているレクチャーでフォローできます。</p></div>
         </div>
       </div>
 
@@ -384,7 +392,7 @@
         <h3 class="faq-group-title">技術・セキュリティ</h3>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">会社の図面や取引先情報をAIに入れても大丈夫ですか？</button>
-          <div class="faq-a" hidden><p>Claudeの設定画面から「学習への利用」をオフにできるので、その設定をしていただければ、入力データが学習に使われることはありません。</p></div>
+          <div class="faq-a" hidden><p>翻訳機能はAnthropic社のAPIをサーバー経由で利用しており、入力いただいたデータがAIの学習に使われることはありません。データは企業ごとに分離された専用スペースで管理されます。</p></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">パソコンやAIに詳しい人がいなくても運用できますか？</button>
@@ -404,11 +412,11 @@
     <p class="final-cta-sub" data-fade>「うちの会社でも使える？」「外国人スタッフにもできる？」という段階からでもお気軽にどうぞ。</p>
     <div class="final-cta-actions" data-fade>
       <a href="https://calendar.app.google/vdWcHCvukqvAnP9Q6" target="_blank" rel="noopener" class="btn btn-yellow btn-lg">オンライン相談予約</a>
-      <a href="tel:0748558027" class="btn btn-outline-white btn-lg"><img src="images/phonIcon.svg" class="tel-icon" alt=""> 今すぐ電話する</a>
+      <a href="tel:0748558017" class="btn btn-outline-white btn-lg"><img src="images/phonIcon.svg" class="tel-icon" alt=""> 今すぐ電話する</a>
     </div>
     <div class="final-cta-tel" data-fade>
-      <div class="fct-num">0748-55-8027</div>
-      <div class="fct-info">受付時間：平日 9:00〜17:00　FAX：0748-55-8017</div>
+      <div class="fct-num">0748-55-8017</div>
+      <div class="fct-info">受付時間：平日 9:00〜17:00　FAX：0748-55-8027</div>
     </div>
   </div>
 </section>

@@ -266,52 +266,70 @@ section { padding: 96px 0; }
   1. Hero
 ===================== */
 .hero {
-  position: relative; overflow: hidden;
-  min-height: 100vh; display: flex; align-items: center;
-  padding-top: 60px;
-}
-.hero-bg {
-  position: absolute; inset: 0; z-index: 0;
-}
-.hero-photo-ph {
-  width: 100%; height: 100%;
-  background: var(--grad);
-  display: flex; align-items: center; justify-content: center;
-  color: rgba(255,255,255,0.2); font-size: 0.75rem; text-align: center; line-height: 1.8;
-}
-.hero-overlay {
-  position: absolute; inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(3,30,50,0.72) 0%,
-    rgba(3,30,50,0.45) 55%,
-    rgba(3,30,50,0.15) 100%
-  );
+  background: var(--white);
+  padding-top: 60px; /* fixed header offset; section{} handles top/bottom rhythm */
 }
 .hero-inner {
-  position: relative; z-index: 1;
-  padding: 96px 0;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
 }
-.hero-copy { max-width: 600px; }
+.hero-copy { max-width: 560px; }
 .hero-title {
-  font-size: clamp(2rem, 4.2vw, 3rem);
+  font-size: clamp(1.9rem, 3.8vw, 2.75rem);
   font-weight: 900; line-height: 1.3;
-  color: #fff; margin-bottom: 16px;
-  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
-}
-.hero-badge {
-  display: inline-block; margin-bottom: 20px;
-  background: rgba(255,255,255,0.12);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255,255,255,0.28);
-  color: #fff; font-size: 0.88rem; font-weight: 700;
-  padding: 6px 14px; border-radius: var(--r-xs);
+  color: var(--text); margin-bottom: 20px;
 }
 .hero-sub {
-  font-size: 0.975rem; line-height: 1.9;
-  color: rgba(255,255,255,0.85); margin-bottom: 36px;
+  font-size: 1rem; line-height: 1.9;
+  color: var(--sub); margin-bottom: 36px;
 }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* Hero illustration (placeholder) */
+.hero-illust { display: flex; align-items: center; justify-content: center; }
+.hero-illust-frame {
+  position: relative;
+  width: 100%; max-width: 420px;
+  aspect-ratio: 4 / 5;
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-person-ph {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+}
+.hero-person-head {
+  width: 30%; aspect-ratio: 1 / 1; border-radius: 50%;
+  background: var(--line); margin-bottom: -4%;
+}
+.hero-person-body {
+  width: 78%; height: 60%;
+  background: var(--line);
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+}
+.hero-tablet {
+  position: relative; z-index: 1;
+  width: 54%;
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-tablet-body {
+  width: 100%;
+  background: #1F2937;
+  border-radius: var(--r);
+  padding: 10px;
+  box-shadow: var(--sh-lg);
+}
+.hero-tablet-screen {
+  width: 100%; aspect-ratio: 3 / 4;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.hero-tablet-iframe {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  border: none;
+  pointer-events: none;
+}
 
 /* =====================
   2. Pain Points
@@ -624,7 +642,7 @@ section { padding: 96px 0; }
 }
 .ps3-icon { width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; }
 .ps3-icon img { width: 64px; height: 64px; object-fit: contain; border-radius: 10px; }
-.ps3-icon--out span { font-size: 2.5rem; }
+.ps3-icon span { font-size: 2.5rem; }
 .ps3-title { font-size: 0.975rem; font-weight: 800; color: var(--text); line-height: 1.3; }
 .ps3-desc { font-size: 0.8rem; color: var(--sub); line-height: 1.7; }
 .ps3-badges { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; margin-top: 4px; }
@@ -858,16 +876,10 @@ section { padding: 96px 0; }
   .section-lead.text-center,
   .text-center .section-lead { margin: 0 0 52px; text-align: left; }
 
-  /* Hero */
-  .hero { min-height: 100svh; }
-  .hero-overlay {
-    background: linear-gradient(
-      to bottom,
-      rgba(3,30,50,0.6) 0%,
-      rgba(3,30,50,0.4) 100%
-    );
-  }
-  .hero-inner { padding: 72px 0; }
+  /* Hero: stack text then illustration */
+  .hero-inner { grid-template-columns: 1fr; gap: 32px; }
+  .hero-copy { max-width: 100%; }
+  .hero-illust-frame { max-width: 300px; }
 
   /* Pain */
   .pain-grid { grid-template-columns: 1fr; gap: 12px; }
